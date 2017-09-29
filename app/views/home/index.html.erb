@@ -1,12 +1,35 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <nav><%=render "layouts/nav" %></nav>
 
 
 <header>  <%= render "layouts/header" %></header>
 <body>
-    
+  <h3>Here is a listing of our veterinarians</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Photo</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Years in practice</th>
+            <th>Vet university</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+    <tbody>
+      <% @veterinarians.each do |veterinarian| %>
+        <tr>
+          <td><%= veterinarian.profile_pic%></td>
+          <td><%= veterinarian.first_name %></td>
+          <td><%= veterinarian.last_name %></td>
+          <td><%= veterinarian.years_in_practice %></td>
+          <td><%= veterinarian.vet_university %></td>
+        </tr>
+      <% end %>
+    </tbody>
+ </table>
 </body>
 
 
 
 <footer><%= render "layouts/footer" %></footer>
-

@@ -6,15 +6,42 @@
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 
 li {
     display: inline;
     width: 60px;
+    box-sizing: border-box;
 }
 
 a {
     padding: 8px;
     background-color: #dddddd;
+    box-sizing: border-box; background-color: #001f3f;
+}
+
+/*body*/
+ body {
+   box-sizing: border-box;
+   background-color: #001f3f;
+   text-align: center;
+ }
+
+table {
+   border: 1px solid black;
+ }
+
+
+/*footer*/
+
+footer {
+  position: fixed;
+  left:0px;
+  bottom:100px;
+  height: 70px;
+  width:100%;
+  text-align: center;
+  display: inline;
+  box-sizing: border-box;
 }
