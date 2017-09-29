@@ -24,7 +24,7 @@ class VeterinariansController < ApplicationController
   # POST /veterinarians
   # POST /veterinarians.json
   def create
-    @veterinarian = veterinarian.new(veterinarian_params)
+    @veterinarian= veterinarian.new(veterinarian_params)
 
     respond_to do |format|
       if @veterinarian.save
@@ -69,6 +69,6 @@ class VeterinariansController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def veterinarian_params
-      params.require(:veterinarian).permit(:first_name, :last_name, :years_in_practice, :int, :vet_university)
+      params.require(:veterinarian).permit(:first_name, :last_name, :years_in_practice, :vet_university, :avatar)
     end
 end

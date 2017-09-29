@@ -3,13 +3,13 @@
 one:
   first_name: MyString
   last_name: MyString
-  years_in_practice: MyString
-  int: MyString
+  years_in_practice: 1
   vet_university: MyString
+  avatar: MyString
 
 two:
   first_name: MyString
   last_name: MyString
-  years_in_practice: MyString
-  int: MyString
+  years_in_practice: 1
   vet_university: MyString
+  avatar: MyString

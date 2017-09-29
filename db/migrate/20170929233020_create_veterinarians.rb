@@ -5,6 +5,7 @@ class CreateVeterinarians < ActiveRecord::Migration
       t.string :last_name
       t.integer :years_in_practice
       t.string :vet_university
+      t.string :avatar
 
       t.timestamps null: false
     end
