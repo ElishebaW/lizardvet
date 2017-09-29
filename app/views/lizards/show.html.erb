@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Petname:</strong>
+  <%= @lizard.petname %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @lizard.weight %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @lizard.length %>
+</p>
+
+<p>
+  <strong>Last seen:</strong>
+  <%= @lizard.last_seen %>
+</p>
+
+<%= link_to 'Edit', edit_lizard_path(@lizard) %> |
+<%= link_to 'Back', lizards_path %>

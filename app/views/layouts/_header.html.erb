@@ -1,0 +1,33 @@
+   <html>
+    <body>
+    <h1>The Lizard Veternarian</h1>
+        <h2>We are in the business of caring for your lizard</h2>
+        
+        <h3>Here is a listing of our veterinarians</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Photo</th>
+                  <th>First name</th>
+                  <th>Last name</th>
+                  <th>Years in practice</th>
+                  <th>Vet university</th>
+                  <th colspan="3"></th>
+                </tr>
+              </thead>
+        
+                
+          <tbody>
+            <% @veterinarians.each do |veterinarian| %>
+              <tr>
+                <td><%= veterinarian.profile_pic%></td>
+                <td><%= veterinarian.first_name %></td>
+                <td><%= veterinarian.last_name %></td>
+                <td><%= veterinarian.years_in_practice %></td>
+                <td><%= veterinarian.vet_university %></td>
+              </tr>
+            <% end %>
+          </tbody>
+       </table>
+    </body>
+</html>

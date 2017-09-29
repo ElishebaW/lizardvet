@@ -1,0 +1,33 @@
+<%= form_for(@veterinarians) do |f| %>
+  <% if @veterinarians.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@veterinarian.errors.count, "error") %> prohibited this veterinarian from being saved:</h2>
+
+      <ul>
+      <% @veterinarian.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :years_in_practice %><br>
+    <%= f.text_field :years_in_practice %>
+  </div>
+  <div class="field">
+    <%= f.label :vet_university %><br>
+    <%= f.text_field :vet_university %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

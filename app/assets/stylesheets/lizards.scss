@@ -1,0 +1,20 @@
+// Place all the styles related to the lizards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Navigation */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    width: 60px;
+}
+
+a {
+    padding: 8px;
+    background-color: #dddddd;
+}
