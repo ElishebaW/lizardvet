@@ -24,7 +24,7 @@ class VeterinariansController < ApplicationController
   # POST /veterinarians
   # POST /veterinarians.json
   def create
-    @veterinarian= veterinarian.new(veterinarian_params)
+    @veterinarian= Veterinarian.new(veterinarian_params)
 
     respond_to do |format|
       if @veterinarian.save

@@ -10,14 +10,13 @@
       <th>Last name</th>
       <th>Years in practice</th>
       <th>Vet university</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @veterinarians.each do |veterinarian| %>
       <tr>
-        <td><%= veterinarian.profile_pic %></td>
+        <td><%= veterinarian.avatar%></td>
         <td><%= veterinarian.first_name %></td>
         <td><%= veterinarian.last_name %></td>
         <td><%= veterinarian.years_in_practice %></td>
