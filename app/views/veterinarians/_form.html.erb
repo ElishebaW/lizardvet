@@ -1,5 +1,5 @@
-<%= form_for(@veterinarian) do |f| %>
-  <% if @veterinarian.errors.any? %>
+<%= form_for(@veterinarians) do |f| %>
+  <% if @veterinarians.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@veterinarian.errors.count, "error") %> prohibited this veterinarian from being saved:</h2>
 
@@ -16,8 +16,12 @@
     <%= f.text_field :first_name %>
   </div>
   <div class="field">
-    <%= f.label :profile_pic %><br>
-
+    <%= f.label :avatar %><br>
+    <%= f.file_field :avatar %>
+      <% if f.object.avatar? %>
+        <%= f.label :remove_avatar%>
+        <%= f.check_box :remove_avatar %>
+      <% end %>
   </div>
   <div class="field">
     <%= f.label :last_name %><br>

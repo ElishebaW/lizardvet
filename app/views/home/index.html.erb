@@ -6,30 +6,27 @@
 <header>  <%= render "layouts/header" %></header>
 <body>
   <h3>Here is a listing of our veterinarians</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Photo</th>
-            <th>First name</th>
-            <th>Last name</th>
-            <th>Years in practice</th>
-            <th>Vet university</th>
-          </tr>
-        </thead>
-    <tbody>
-      <% @veterinarians.each do |veterinarian| %>
+    <table>
+      <thead>
         <tr>
-          <td><%= veterinarian.avatar%></td>
-          <td><%= veterinarian.first_name %></td>
-          <td><%= veterinarian.last_name %></td>
-          <td><%= veterinarian.years_in_practice %></td>
-          <td><%= veterinarian.vet_university %></td>
+          <th>Photo</th>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Years in practice</th>
+          <th>Vet university</th>
         </tr>
-      <% end %>
-    </tbody>
- </table>
+      </thead>
+  <tbody>
+    <% @veterinarians.each do |veterinarian| %>
+      <tr>
+        <td><%= veterinarian.avatar%></td>
+        <td><%= veterinarian.first_name %></td>
+        <td><%= veterinarian.last_name %></td>
+        <td><%= veterinarian.years_in_practice %></td>
+        <td><%= veterinarian.vet_university %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 </body>
-
-
-
 <footer><%= render "layouts/footer" %></footer>

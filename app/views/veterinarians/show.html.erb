@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-<strong>Profile Pic:</strong>
-<% @veterinarian.avatar %>
-
+  <strong>Profile Pic:</strong>
+  <% @veterinarian.avatar %>
+  <%= image_tag @veterinarian.avatar.thumb.url %>
 </p>
 
 <p>
