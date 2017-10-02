@@ -1,5 +1,5 @@
-<%= form_for(@veterinarians) do |f| %>
-  <% if @veterinarians.errors.any? %>
+<%= form_for(@veterinarian) do |f| %>
+  <% if @veterinarian.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@veterinarian.errors.count, "error") %> prohibited this veterinarian from being saved:</h2>
 
