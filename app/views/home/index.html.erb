@@ -24,7 +24,9 @@
         <td><%= veterinarian.last_name %></td>
         <td><%= veterinarian.years_in_practice %></td>
         <td><%= veterinarian.vet_university %></td>
-      </tr>
+        <td><%= link_to 'Show', veterinarian %></td>
+        <td><%= link_to 'Edit', edit_veterinarian_path(veterinarian) %></td>
+        <td><%= link_to 'Destroy', veterinarian, method: :delete, data: { confirm: 'Are you sure?'}%></td>
     <% end %>
   </tbody>
 </table>

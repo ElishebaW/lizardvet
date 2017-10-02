@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* Navigation */
+
+nav {
+  position: relative;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -20,15 +24,20 @@ li {
 
 a {
     padding: 8px;
-    background-color: #dddddd;
-    box-sizing: border-box; background-color: #001f3f;
+    box-sizing: border-box;
+    background-color: #C7DBA7;
+    text-decoration: none;
 }
 
+a:hover {
+  background-color: #800000;
+}
 /*body*/
  body {
    box-sizing: border-box;
    background-color: #001f3f;
    text-align: center;
+   margin: 0px;
  }
 
 /*table*/
@@ -50,7 +59,7 @@ td:hover {
 }
 
 th {
-  background-color: #4CAF50;
+  background-color: #C0C0C0;
 }
 
 
