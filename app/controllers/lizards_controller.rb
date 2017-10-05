@@ -1,5 +1,6 @@
 class LizardsController < ApplicationController
   before_action :set_lizard, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /lizards
   # GET /lizards.json

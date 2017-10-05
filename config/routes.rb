@@ -1,14 +1,25 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :veterinarians
   resources :lizards
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#index'
+  #root 'home#index'
 
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+  authenticated :user do
+    root to: 'lizards#index', as: :authenticated_root
+  end
+
+root to: 'home#index', as: :unauthenticated_root
+#
+# devise_scope :user do
+#    get '/users/sign_out' => 'devise/sessions#destroy'
+#  end
+
+
+  # Example of regular route:  get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

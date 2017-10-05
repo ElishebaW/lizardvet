@@ -25,6 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'carrierwave', '~> 1.0'
 gem 'carrierwave-processing', '~> 1.1'
 gem 'mini_magick', '~> 4.8'
+gem 'devise', '~> 4.3'
 
 
 # Use ActiveModel has_secure_password

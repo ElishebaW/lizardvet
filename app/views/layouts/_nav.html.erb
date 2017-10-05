@@ -1,9 +1,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <nav>
-    <ul>
-        <li><%= link_to "Login", '#'%></li>
-        <li><%= link_to "New Client Information", '#'%></li>
-        <li><%= link_to "Lizard of the Month", '#'%></li>
-        <li><%= link_to "Awards", '#'%></li>
-    </ul>
+  <%= link_to "Login",  user_session_path %>
+  <%= link_to "Logout", destroy_user_session_path ,:method => :delete %>
+
 </nav>
