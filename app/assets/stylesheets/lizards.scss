@@ -7,6 +7,8 @@
 nav {
   position: fixed;
   float: left;
+  margin: auto;
+  z-index: 10000;
 }
 
 ul {
@@ -25,23 +27,30 @@ li {
 }
 
 a {
-    padding: 8px;
+    padding: 0px;
     box-sizing: border-box;
-    background-color: #C7DBA7;
+    margin: 20px;
     text-decoration: none;
 }
 
 a:hover {
   background-color: #800000;
 }
+
 /*body*/
  body {
-   box-sizing: border-box;
    background-color: #001f3f;
    text-align: center;
-   margin: 0px;
  }
 
+/* Headers */
+
+h2 {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-top: 10px;
+}
 /*table*/
 
 table {
@@ -65,7 +74,30 @@ th {
 }
 
 
+/*forms */
+
+.check_box {
+  display: inline-block;
+}
+
+input[type=text]{
+  width: 60%;
+  padding: 8px 8px;
+  margin: 6px 0;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+input[type=submit] {
+    background-color: #42f46e;
+}
+
+
 /*footer*/
+
 
 footer {
   position: fixed;

@@ -2,21 +2,19 @@ Rails.application.routes.draw do
   devise_for :users
   resources :veterinarians
   resources :lizards
+  resources :home
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   #root 'home#index'
 
-  authenticated :user do
-    root to: 'lizards#index', as: :authenticated_root
-  end
+authenticated :user do
+  root to: 'lizards#index', as: :authenticated_root
+end
 
-root to: 'home#index', as: :unauthenticated_root
-#
-# devise_scope :user do
-#    get '/users/sign_out' => 'devise/sessions#destroy'
-#  end
+   root to: 'home#index', as: :unauthenticated_root
+
 
 
   # Example of regular route:  get 'products/:id' => 'catalog#view'
