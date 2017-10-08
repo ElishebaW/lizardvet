@@ -1,9 +1,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<h1>The Lizard Veternarian</h1>
+  <h2>We are in the business of caring for your lizard</h2>
 
-<header>  <%= render "layouts/header" %></header>
-<body>
   <h3>Here is a listing of our veterinarians</h3>
     <table>
       <thead>
@@ -13,6 +13,9 @@
           <th>Last name</th>
           <th>Years in practice</th>
           <th>Vet university</th>
+          <% if user_signed_in? %>
+          <th colspan="3">Manage</th>
+          <% end %>
         </tr>
       </thead>
   <tbody>
@@ -31,5 +34,3 @@
     <% end %>
   </tbody>
 </table>
-</body>
-<footer><%= render "layouts/footer" %></footer>

@@ -4,12 +4,14 @@
 
 /* Navigation */
 
-nav {
+.navigation  {
   position: fixed;
-  float: left;
   margin: auto;
   z-index: 10000;
+  display: block;
 }
+
+
 
 ul {
     list-style-type: none;
@@ -38,18 +40,22 @@ a:hover {
 }
 
 /*body*/
+
  body {
    background-color: #001f3f;
    text-align: center;
+   z-index: 500;
+
  }
 
 /* Headers */
-
+h1, h2{
+   padding-top: 60px;
+}
 h2 {
   font-weight: bold;
   font-size: 18px;
   font-family: sans-serif;
-  margin-top: 10px;
 }
 /*table*/
 
@@ -66,11 +72,11 @@ table {
 }
 
 td:hover {
-    background-color: #f5f5f5
+    background-color: #f5f5f5;
 }
 
 th {
-  background-color: #C0C0C0;
+  background-color: #20d00b;
 }
 
 
@@ -81,7 +87,7 @@ th {
 }
 
 input[type=text]{
-  width: 60%;
+  width: 70%;
   padding: 8px 8px;
   margin: 6px 0;
   box-sizing: border-box;
@@ -92,7 +98,7 @@ input[type=text]:focus {
 }
 
 input[type=submit] {
-    background-color: #42f46e;
+    background-color: #20d00b;
 }
 
 
