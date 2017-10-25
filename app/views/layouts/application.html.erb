@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lizard Vet</title>
+  <script src="https://use.fontawesome.com/8795c4ff26.js"></script>
+  <title>The Vet</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<div class='navigation'>
-<nav><%=render "layouts/nav"%></nav>
-</div>
-<div clas= 'body'>
-<body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+<div class='navigation'><%=render "layouts/nav"%></div>
+  <div clas= 'body'>
+  <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
-<%= yield %>
+  <%= yield %>
 
-</body>
-</div>
-<footer><%= render "layouts/footer" %></footer>
+  </body>
+  </div>
+<div class='footer'><%= render "layouts/footer" %></div>
 </html>
