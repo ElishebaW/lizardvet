@@ -7,7 +7,9 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<div class='navigation'><%=render "layouts/nav"%></div>
+<div class='navigation'>
+<%=render "layouts/nav"%>
+</div>
   <div clas= 'body'>
   <body>
     <p class="notice"><%= notice %></p>
@@ -17,5 +19,7 @@
 
   </body>
   </div>
-<div class='footer'><%= render "layouts/footer" %></div>
+<div class='footer'>
+  <%= render "layouts/footer" %>
+</div>
 </html>

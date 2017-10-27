@@ -1,8 +1,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <% if user_signed_in? %>
         <%= link_to "Logout", destroy_user_session_path ,:method => :delete %>
-        <%= link_to "Manage Vets", home_index_path%>
+        <%= link_to "Manage Vets", veterinarians_path%>
     <% else %>
        <%= link_to "Login",  user_session_path %>
        <%= link_to "Home", home_index_path%>
     <% end %>
+    <%= link_to "Contact Us!",  asset_path("contact.html.erb")%>
