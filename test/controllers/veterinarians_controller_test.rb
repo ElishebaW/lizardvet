@@ -1,5 +1,3 @@
-require 'test_helper'
-
 class VeterinariansControllerTest < ActionController::TestCase
   setup do
     @veterinarian = veterinarians(:one)
@@ -46,4 +44,6 @@ class VeterinariansControllerTest < ActionController::TestCase
 
     assert_redirected_to veterinarians_path
   end
+
+
 end

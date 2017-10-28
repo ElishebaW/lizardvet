@@ -1,7 +1,8 @@
-<%= form_for(@veterinarian) do |f| %>
-  <% if @veterinarian.errors.any? %>
+<%= form_for(@verterinarian) do |f| %>
+  <% if @verterinarian.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@veterinarian.errors.count, "error") %> prohibited this veterinarian from being saved:</h2>
+      <h2><%= pluralize(@veterinarian.errors.count, "error") %> prohibited this lizard from being saved:</h2>
+
 
       <ul>
       <% @veterinarian.errors.full_messages.each do |message| %>
