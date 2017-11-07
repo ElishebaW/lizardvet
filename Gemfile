@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '4.2.8'
-gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -19,9 +18,14 @@ gem 'unicorn'
 gem 'capistrano-rails', group: :development
 gem 'nokogiri', '~> 1.8', '>= 1.8.1'
 
+group :production do
+  gem 'pg'
+end
+
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.7', '>= 3.7.1'
+  gem 'sqlite3'
 end
 
 group :development do
