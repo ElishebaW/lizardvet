@@ -1,0 +1,232 @@
+/* Navigation */
+/* line 4, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+.navigation {
+  position: fixed;
+  top: 0;
+  background-color: #1F6BEF;
+  padding: 20px;
+  width: 100%;
+}
+
+/* line 12, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+ul {
+  list-style-type: none;
+  text-align: center;
+  font-size: 14px;
+  bottom: 0;
+}
+
+/* line 19, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+a {
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 20px;
+  text-decoration: none;
+  color: #333538;
+}
+
+/* line 27, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+a:visited {
+  color: #333538;
+}
+
+/* line 31, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+a:hover {
+  background-color: #800000;
+}
+
+/* Headers */
+/* line 37, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+h1, h2 {
+  padding-top: 40px;
+}
+
+/* line 41, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+h1 {
+  font-family: 'Yeseva One';
+  font-weight: bold;
+  font-size: 36px;
+}
+
+/* line 47, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+h2 {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+}
+
+/*body*/
+/* line 55, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+body {
+  background-color: #001f3f;
+  text-align: center;
+  padding-top: 40px;
+  width: 100%;
+}
+
+/* line 62, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+p {
+  display: inline-grid;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* line 71, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+.analytics {
+  background-color: #00BBD4;
+  padding-bottom: 70px;
+  font-family: 'Roboto Slab', serif;
+}
+
+/*images*/
+/*table*/
+/* line 83, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+table {
+  table-layout: auto;
+  text-align: center;
+  display: inline-table;
+}
+
+/* line 89, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 95, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+td:hover {
+  background-color: #f5f5f5;
+}
+
+/* line 99, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+th {
+  background-color: #20d00b;
+}
+
+/*forms */
+/* line 107, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+input[type=email], input[type=password], input[type=text] {
+  width: 50%;
+  padding: 8px 8px;
+  margin: 6px 0;
+  box-sizing: border-box;
+}
+
+/* line 114, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
+/* line 118, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+input[type=submit] {
+  padding: 8px 8px;
+  margin: 6px 0;
+  box-sizing: border-box;
+  background-color: #20d00b;
+  width: 30%;
+}
+
+/* line 126, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+input[type=check_box] {
+  vertical-align: middle;
+}
+
+/* line 130, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+label {
+  display: inline-block;
+}
+
+/* line 134, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+.check_box {
+  vertical-align: middle;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/*footer*/
+/* line 143, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+.footer, .social-media {
+  text-align: center;
+  bottom: 0;
+  position: fixed;
+  background-color: #1F6BEF;
+  width: 100%;
+}
+
+/*scaffold*/
+/* line 153, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 161, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 167, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 174, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+#notice {
+  color: green;
+}
+
+/* line 178, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 184, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 192, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 203, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
