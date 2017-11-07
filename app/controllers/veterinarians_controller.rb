@@ -1,28 +1,21 @@
 class VeterinariansController < ApplicationController
   before_action :set_veterinarian, only: [:show, :edit, :update, :destroy]
 
-  # GET /veterinarians
-  # GET /veterinarians.json
+
   def index
     @veterinarians = Veterinarian.all
   end
 
-  # GET /veterinarians/1
-  # GET /veterinarians/1.json
   def show
   end
 
-  # GET /veterinarians/new
   def new
     @veterinarians = Veterinarian.new
   end
 
-  # GET /veterinarians/1/edit
   def edit
   end
 
-  # POST /veterinarians
-  # POST /veterinarians.json
   def create
     @veterinarian= Veterinarian.new(veterinarian_params)
 
@@ -37,8 +30,6 @@ class VeterinariansController < ApplicationController
     end
   end
 
-  # PATCH/PUT /veterinarians/1
-  # PATCH/PUT /veterinarians/1.json
   def update
     respond_to do |format|
       if @veterinarian.update(veterinarian_params)
@@ -51,8 +42,6 @@ class VeterinariansController < ApplicationController
     end
   end
 
-  # DELETE /veterinarians/1
-  # DELETE /veterinarians/1.json
   def destroy
     @veterinarian.destroy
     respond_to do |format|
@@ -61,14 +50,13 @@ class VeterinariansController < ApplicationController
     end
   end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_veterinarian
-      @veterinarian = Veterinarian.find(params[:id])
-    end
+private
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def veterinarian_params
-      params.require(:veterinarian).permit(:first_name, :last_name, :years_in_practice, :vet_university, :avatar, :remove_image)
-    end
+  def set_veterinarian
+    @veterinarian = Veterinarian.find(params[:id])
+  end
+
+  def veterinarian_params
+    params.require(:veterinarian).permit(:first_name, :last_name, :years_in_practice, :vet_university, :avatar, :remove_image)
+  end
 end

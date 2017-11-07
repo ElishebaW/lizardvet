@@ -2,28 +2,21 @@ class LizardsController < ApplicationController
   before_action :set_lizard, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
 
-  # GET /lizards
-  # GET /lizards.json
+
   def index
     @lizards = Lizard.all
   end
 
-  # GET /lizards/1
-  # GET /lizards/1.json
   def show
   end
 
-  # GET /lizards/new
   def new
     @lizard = Lizard.new
   end
 
-  # GET /lizards/1/edit
   def edit
   end
 
-  # POST /lizards
-  # POST /lizards.json
   def create
     @lizard = Lizard.new(lizard_params)
 
@@ -38,8 +31,6 @@ class LizardsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /lizards/1
-  # PATCH/PUT /lizards/1.json
   def update
     respond_to do |format|
       if @lizard.update(lizard_params)
@@ -52,8 +43,6 @@ class LizardsController < ApplicationController
     end
   end
 
-  # DELETE /lizards/1
-  # DELETE /lizards/1.json
   def destroy
     @lizard.destroy
     respond_to do |format|
@@ -62,14 +51,13 @@ class LizardsController < ApplicationController
     end
   end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_lizard
-      @lizard = Lizard.find(params[:id])
-    end
+private
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def lizard_params
-      params.require(:lizard).permit(:petname, :weight, :length, :last_seen)
-    end
+  def set_lizard
+    @lizard = Lizard.find(params[:id])
+  end
+
+  def lizard_params
+    params.require(:lizard).permit(:petname, :weight, :length, :last_seen)
+  end
 end
