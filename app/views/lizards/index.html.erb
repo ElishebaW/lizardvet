@@ -1,4 +1,5 @@
-<h1>Listing Lizards</h1>
+<div class='main'>
+<h1>My Pet Case Load</h1>
 <%= render 'lizards/sidebar' %>
 <table>
   <thead>
@@ -12,17 +13,18 @@
   </thead>
   <tbody>
     <% @lizards.each do |lizard| %>
-      <tr>
-        <td><%= lizard.petname %></td>
-        <td><%= lizard.weight %></td>
-        <td><%= lizard.length %></td>
-        <td><%= lizard.last_seen %></td>
-        <td><%= link_to 'Show', lizard %></td>
-        <td><%= link_to 'Edit', edit_lizard_path(lizard) %></td>
-        <td><%= link_to 'Destroy', lizard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <tr>
+      <td><%= lizard.petname %></td>
+      <td><%= lizard.weight %></td>
+      <td><%= lizard.length %></td>
+      <td><%= lizard.last_seen %></td>
+      <td><%= link_to 'Show', lizard %></td>
+      <td><%= link_to 'Edit', edit_lizard_path(lizard) %></td>
+      <td><%= link_to 'Destroy', lizard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
     <% end %>
   </tbody>
 </table>
 <br>
 <%= link_to 'New Lizard', new_lizard_path %>
+</div>
