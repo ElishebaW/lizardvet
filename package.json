@@ -1,0 +1,26 @@
+{
+  "name": "the_vets",
+  "version": "1.0.0",
+  "description": "An analytics tool for vets",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "chart.js": "^2.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElishebaW/lizardvet.git"
+  },
+  "author": "Elisheba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElishebaW/lizardvet/issues"
+  },
+  "homepage": "https://github.com/ElishebaW/lizardvet#readme"
+}

@@ -1,0 +1,32 @@
+<div class='main'>
+<h1>Pet Owners</h1>
+<%= render 'lizards/sidebar' %>
+<table>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Phone Number</th>
+      <th>Address</th>
+      <th>Pet Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @clients.each do |client| %>
+    <tr>
+      <td><%= client.first_name %></td>
+      <td><%= client.last_name %></td>
+      <td><%= client.phone_number %></td>
+      <td><%= client.address %></td>
+      <td><%= '' %></td>
+      <td><%= link_to 'Show', client %></td>
+      <td><%= link_to 'Edit', edit_client_path(client) %></td>
+      <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+<%= link_to 'New client', new_client_path %>
+</div>

@@ -17,6 +17,9 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'unicorn'
 gem 'capistrano-rails', group: :development
 gem 'nokogiri', '~> 1.8', '>= 1.8.1'
+gem 'chartjs-ror'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
 
 group :production do
   gem 'pg'
