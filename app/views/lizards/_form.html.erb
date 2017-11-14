@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <%= form_for(@lizard) do |f| %>
   <% if @lizard.errors.any? %>
     <div id="error_explanation">
@@ -10,18 +11,34 @@
       </ul>
     </div>
   <% end %>
-
+<div class="smoothScroll">
   <div class="field">
     <%= f.label :petname %><br>
     <%= f.text_field :petname %>
   </div>
   <div class="field">
-    <%= f.label :weight %><br>
+    <%= f.label :weight %>(lbs)<br>
     <%= f.text_field :weight %>
   </div>
   <div class="field">
-    <%= f.label :length %><br>
+    <%= f.label :length %>(ins)<br>
     <%= f.text_field :length %>
+  </div>
+  <div class="field">
+    <%= f.label :social_score %><br>
+    <%= f.text_field :social_score %>
+  </div>
+  <div class="field">
+    <%= f.label :diet_score %><br>
+    <%= f.text_field :diet_score %>
+  </div>
+  <div class="field">
+    <%= f.label :fitness_score%><br>
+    <%= f.text_field :fitness_score %>
+  </div>
+  <div class="field">
+    <%= f.label :mental_score %><br>
+    <%= f.text_field :mental_score %>
   </div>
   <div class="field">
     <%= f.label :last_seen %><br>
@@ -30,4 +47,5 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+</div>
 <% end %>

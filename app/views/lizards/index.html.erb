@@ -7,8 +7,11 @@
       <th>Petname</th>
       <th>Weight</th>
       <th>Length</th>
+      <th>Social Score</th>
+      <th>Diet Score</th>
+      <th>Fitness Score</th>
+      <th>Mental Score</th>
       <th>Last seen</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
   <tbody>
@@ -17,14 +20,21 @@
       <td><%= lizard.petname %></td>
       <td><%= lizard.weight %></td>
       <td><%= lizard.length %></td>
+      <td><%= lizard.social_score %></td>
+      <td><%= lizard.diet_score %></td>
+      <td><%= lizard.fitness_score %></td>
+      <td><%= lizard.mental_score %></td>
       <td><%= lizard.last_seen %></td>
-      <td><%= link_to 'Show', lizard %></td>
-      <td><%= link_to 'Edit', edit_lizard_path(lizard) %></td>
-      <td><%= link_to 'Destroy', lizard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
     <% end %>
   </tbody>
 </table>
 <br>
-<%= link_to 'New Lizard', new_lizard_path %>
+<h2> Manage Lizards</h2>
+  <% @lizards.each do |lizard| %>
+  <%= link_to 'New Lizard', new_lizard_path %>
+  <%= link_to 'Show', lizard %>
+  <%= link_to 'Edit', edit_lizard_path(lizard) %>
+  <%= link_to 'Destroy', lizard, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <% end %>
 </div>

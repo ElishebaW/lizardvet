@@ -102,6 +102,10 @@ th {
 
 /*forms */
 
+.scroll {
+  overflow-y: auto;
+}
+
 
 input[type=email], input[type=password],input[type=text] {
   width: 50%;
@@ -212,12 +216,11 @@ label {
     width: 200px;
     position: fixed;
     z-index: 1;
-    top: 0;
     left: 0;
     bottom: 20;
     overflow-x: hidden;
-    padding-top: 20px;
-    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 8px;
   }
 
   .main {
