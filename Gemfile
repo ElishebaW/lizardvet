@@ -20,6 +20,7 @@ gem 'nokogiri', '~> 1.8', '>= 1.8.1'
 gem 'chartjs-ror'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
+gem "chartkick"
 
 group :production do
   gem 'pg'
