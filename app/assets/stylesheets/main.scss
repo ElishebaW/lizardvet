@@ -153,9 +153,6 @@ label {
   text-align: center;
 }
 
-
-
-
   /*scaffold*/
 
   body {
@@ -163,9 +160,7 @@ label {
     color: #333;
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 13px;
-    min-height: 400px;
     margin-bottom: 150px;
-    clear: both;
   }
 
   p, ol, ul, td {
@@ -219,15 +214,12 @@ label {
   /*sidenav https://www.w3schools.com/howto/howto_js_sidenav.asp*/
 
   .sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    bottom: 20;
-    overflow-x: hidden;
-    padding-top: 10px;
-    padding-bottom: 8px;
+    position:fixed;
+    height:100%;
+    width:200px;
+    top:0;
+    left:0;
+    padding-top: 50px;
   }
 
   .main {
