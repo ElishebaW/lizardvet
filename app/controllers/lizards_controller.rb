@@ -58,6 +58,6 @@ private
   end
 
   def lizard_params
-    params.require(:lizard).permit(:petname, :weight, :length, :last_seen)
+    params.require(:lizard).permit(:petname, :weight, :length, :social_score, :diet_score, :fitness_score, :mental_score, :last_seen)
   end
 end

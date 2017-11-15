@@ -1,23 +1,29 @@
-<p id="notice"><%= notice %></p>
-<p class='form'>
+<p id="notice"><%= notice %>
+
+<div class='show_pets' </div>
   <strong>Petname:</strong>
   <%= @lizard.petname %>
-</p>
 
-<p class='form'>
   <strong>Weight:</strong>
   <%= @lizard.weight %>
-</p>
 
-<p class='form'>
   <strong>Length:</strong>
   <%= @lizard.length %>
-</p>
 
-<p class='form'>
+  <strong>Social Score:</strong>
+  <%= @lizard.social_score %>
+
+  <strong>Diet Score:</strong>
+  <%= @lizard.diet_score %>
+
+  <strong>Fitness Score:</strong>
+  <%= @lizard.fitness_score %>
+
+  <strong>Mental Score:</strong>
+  <%= @lizard.mental_score %>
+
   <strong>Last seen:</strong>
   <%= @lizard.last_seen %>
-</p>
 
 <%= link_to 'Edit', edit_lizard_path(@lizard) %> |
 <%= link_to 'Back', lizards_path %>

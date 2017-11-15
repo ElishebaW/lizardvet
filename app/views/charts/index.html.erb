@@ -1,4 +1,30 @@
 <%= render 'lizards/sidebar' %>
+
+<h1>Practice Performance Analytics</h1>
+<h2>Getting Pets in for visits</h2>
 <div class='line_chart'>
-<%= bar_chart @lizards.group(:weight).count %>
+<%= line_chart @lizards.group_by_month(:last_seen).count %>
+</div>
+
+
+<h2>Avg Social Score</h2>
+<div class='line_chart'>
+<%= line_chart Lizard.group(:social_score).count %>
+</div>
+
+
+<h2>Avg Diet Score</h2>
+<div class='line_chart'>
+<%= bar_chart @lizards.group(:diet_score).count %>
+</div>
+
+
+<h2>Avg Fitness Score</h2>
+<div class='line_chart'>
+<%= pie_chart @lizards.group(:fitness_score).count %>
+</div>
+
+<h2>Avg Mental Score</h2>
+<div class='line_chart'>
+<%= column_chart @lizards.group(:mental_score).count %>
 </div>

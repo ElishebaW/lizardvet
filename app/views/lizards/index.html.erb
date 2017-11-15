@@ -12,6 +12,7 @@
       <th>Fitness Score</th>
       <th>Mental Score</th>
       <th>Last seen</th>
+      <th>Manage</th>
     </tr>
   </thead>
   <tbody>
@@ -25,6 +26,7 @@
       <td><%= lizard.fitness_score %></td>
       <td><%= lizard.mental_score %></td>
       <td><%= lizard.last_seen %></td>
+      <td><%= link_to 'Edit', edit_lizard_path(lizard) %></td>
     </tr>
     <% end %>
   </tbody>
@@ -33,8 +35,6 @@
 <h2> Manage Lizards</h2>
   <% @lizards.each do |lizard| %>
   <%= link_to 'New Lizard', new_lizard_path %>
-  <%= link_to 'Show', lizard %>
-  <%= link_to 'Edit', edit_lizard_path(lizard) %>
-  <%= link_to 'Destroy', lizard, method: :delete, data: { confirm: 'Are you sure?' } %>
+
   <% end %>
 </div>
