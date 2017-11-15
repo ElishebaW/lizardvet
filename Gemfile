@@ -15,11 +15,9 @@ gem 'mini_magick', '~> 4.8'
 gem 'devise', '~> 4.3'
 gem 'bcrypt', '~> 3.1.7'
 gem 'unicorn'
-gem 'capistrano-rails', group: :development
 gem 'nokogiri', '~> 1.8', '>= 1.8.1'
-gem 'wicked_pdf'
-gem 'wkhtmltopdf-binary'
 gem "chartkick"
+gem 'groupdate'
 
 group :production do
   gem 'pg'
@@ -39,4 +37,5 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'capistrano-rails'
 end

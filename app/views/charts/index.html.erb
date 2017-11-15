@@ -1,2 +1,4 @@
 <%= render 'lizards/sidebar' %>
+<div class='line_chart'>
 <%= bar_chart @lizards.group(:weight).count %>
+</div>

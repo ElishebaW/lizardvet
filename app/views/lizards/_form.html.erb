@@ -1,3 +1,4 @@
+<div class="smoothScroll">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <%= form_for(@lizard) do |f| %>
   <% if @lizard.errors.any? %>
@@ -11,7 +12,7 @@
       </ul>
     </div>
   <% end %>
-<div class="smoothScroll">
+
   <div class="field">
     <%= f.label :petname %><br>
     <%= f.text_field :petname %>
@@ -48,4 +49,5 @@
     <%= f.submit %>
   </div>
 </div>
+
 <% end %>
