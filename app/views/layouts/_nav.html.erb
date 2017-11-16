@@ -2,7 +2,7 @@
     <% if user_signed_in? %>
       <%= link_to "Logout", destroy_user_session_path ,:method => :delete %>
       <%= link_to "Manage Vets", veterinarians_path%>
-      <%= link_to "Case Load", 'lizards#index' %>
+      <%= link_to "Case Load", lizards_path %>
     <% else %>
       <%= link_to "Login",  user_session_path %>
       <%= link_to "Home", home_index_path%>
