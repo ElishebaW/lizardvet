@@ -25,7 +25,7 @@
     <%= f.label :length %>(ins)<br>
     <%= f.text_field :length %>
   </div>
-  <div class="field">
+  <div  class="field">
     <%= f.label :social_score %><br>
     <%= f.text_field :social_score %>
   </div>
@@ -43,10 +43,10 @@
   </div>
   <div class="field">
     <%= f.label :last_seen %><br>
-    <%= f.datetime_select :last_seen %>
+    <%= f.date_select :last_seen %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Submit' %>
   </div>
 </div>
 <% end %>
