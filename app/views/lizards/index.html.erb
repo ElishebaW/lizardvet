@@ -4,7 +4,7 @@
 <table>
   <thead>
     <tr>
-      <th>Petname</th>
+      <th><strong>Pet Name</strong></th>
       <th>Weight</th>
       <th>Length</th>
       <th>Social Score</th>
@@ -18,14 +18,14 @@
   <tbody>
     <% @lizards.each do |lizard| %>
     <tr>
-      <td><%= lizard.petname %></td>
+      <td><strong><%= lizard.petname %></strong></td>
       <td><%= lizard.weight %></td>
       <td><%= lizard.length %></td>
       <td><%= lizard.social_score %></td>
       <td><%= lizard.diet_score %></td>
       <td><%= lizard.fitness_score %></td>
       <td><%= lizard.mental_score %></td>
-      <td><%= lizard.last_seen %></td>
+      <td><%= lizard.last_seen.strftime("%m/%d/%Y") %></td>
       <td><%= link_to 'Edit', edit_lizard_path(lizard) %></td>
     </tr>
     <% end %>
@@ -33,8 +33,5 @@
 </table>
 <br>
 <h2> Manage Lizards</h2>
-  <% @lizards.each do |lizard| %>
   <%= link_to 'New Lizard', new_lizard_path %>
-
-  <% end %>
 </div>
