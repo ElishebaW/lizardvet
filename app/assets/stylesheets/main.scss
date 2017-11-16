@@ -119,6 +119,12 @@ th {
   overflow-y: auto;
 }
 
+.show_page {
+  padding: 15px 25px;
+  margin: 10px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
 
 input[type=email], input[type=password],input[type=text] {
   width: 30%;

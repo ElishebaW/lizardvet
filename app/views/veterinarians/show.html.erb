@@ -1,29 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Profile Pic:</strong>
-  <% @veterinarian.avatar %>
-  <%= image_tag @veterinarian.avatar.thumb.url %>
-</p>
-
-<p>
+<div class="show_page">
   <strong>First name:</strong>
   <%= @veterinarian.first_name %>
-</p>
+</div>
 
-<p>
+<div class="show_page">
   <strong>Last name:</strong>
   <%= @veterinarian.last_name %>
-</p>
+</div>
 
-<p>
+<div class="show_page">
   <strong>Years in practice:</strong>
   <%= @veterinarian.years_in_practice %>
-</p>
-<p>
+</div>
+
+<div class="show_page">
   <strong>Vet university:</strong>
   <%= @veterinarian.vet_university %>
-</p>
+</div>
 
 <%= link_to 'Edit', edit_veterinarian_path(@veterinarian) %> |
 <%= link_to 'Back', veterinarians_path %>

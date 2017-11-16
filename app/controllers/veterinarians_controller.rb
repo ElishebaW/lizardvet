@@ -10,7 +10,7 @@ class VeterinariansController < ApplicationController
   end
 
   def new
-    @veterinarians = Veterinarian.new
+    @veterinarian = Veterinarian.new
   end
 
   def edit
@@ -57,6 +57,6 @@ private
   end
 
   def veterinarian_params
-    params.require(:veterinarian).permit(:first_name, :last_name, :years_in_practice, :vet_university, :avatar, :remove_image)
+    params.require(:veterinarian).permit(:first_name, :last_name, :years_in_practice, :vet_university)
   end
 end

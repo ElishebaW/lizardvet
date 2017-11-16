@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %>
 
-<div class='show_pets' </div>
+<div class='show_page'
   <strong>Petname:</strong>
   <%= @lizard.petname %>
 
@@ -24,6 +24,7 @@
 
   <strong>Last seen:</strong>
   <%= @lizard.last_seen %>
+</div>
 
 <%= link_to 'Edit', edit_lizard_path(@lizard) %> |
 <%= link_to 'Back', lizards_path %>
