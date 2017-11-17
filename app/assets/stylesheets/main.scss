@@ -10,18 +10,18 @@
 }
 
 ul {
-    list-style-type: none;
-    text-align: center;
-    font-size: 14px;
-    bottom: 0;
+  list-style-type: none;
+  text-align: center;
+  font-size: 14px;
+  bottom: 0;
 }
 
 a {
-    padding: 0px;
-    box-sizing: border-box;
-    margin: 20px;
-    text-decoration: none;
-    color: #333538;
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 20px;
+  text-decoration: none;
+  color: #333538;
 }
 
 a:visited {
@@ -35,7 +35,7 @@ a:hover {
 /* Headers */
 
 h1, h2{
-   padding-top: 40px;
+  padding-top: 40px;
 }
 
 h1 {
@@ -53,39 +53,33 @@ h2 {
 /*body*/
 
  body {
-   background-color: #001f3f;
-   text-align: center;
-   padding-top: 40px;
-   width: 100%;
-   clear: both;
+  background-color: #001f3f;
+  text-align: center;
+  padding-top: 40px;
+  width: 100%;
+  clear: both;
  }
 
  p {
-   display: inline-grid;
-   font-family: 'Roboto Slab', serif;
+  display: inline-grid;
+  font-family: 'Roboto Slab', serif;
  }
 
- .intro {
-
- }
 
  .analytics {
-   background-color: #00BBD4;
-   padding-bottom: 70px;
-   font-family: 'Roboto Slab', serif;
+  background-color: #00BBD4;
+  padding-bottom: 70px;
+  font-family: 'Roboto Slab', serif;
  }
-
-/*images*/
-
 
 
 /*table*/
 
 table {
-   table-layout: auto;
-   text-align: center;
-   display: inline-table;
-   padding-bottom: 20px;
+  table-layout: auto;
+  text-align: center;
+  display: inline-table;
+  padding-bottom: 20px;
  }
 
  th, td {
@@ -113,7 +107,6 @@ th {
   bottom: 0;
   z-index:2;
 }
-
 
 /*forms */
 
@@ -164,96 +157,88 @@ label {
 
   /*scaffold*/
 
-  body {
-    background-color: #fff;
-    color: #333;
-    font-family: verdana, arial, helvetica, sans-serif;
-    font-size: 13px;
-    margin-bottom: 150px;
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  margin-bottom: 150px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+  ßlor: #fff;
   }
 
-  p, ol, ul, td {
-    font-family: verdana, arial, helvetica, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
+  ul li {
+  font-size: 12px;
+  list-style: square;
   }
+}
 
-  pre {
-    background-color: #eee;
-    padding: 10px;
-    font-size: 11px;
-  }
+/*sidenav https://www.w3schools.com/howto/howto_js_sidenav.asp*/
 
+.sidenav {
+  position:fixed;
+  height:100%;
+  width:220px;
+  top:0;
+  left:0;
+  padding-top: 50px;
+}
 
-  #notice {
-    color: green;
-  }
-
-  .field_with_errors {
-    padding: 2px;
-    background-color: red;
-    display: table;
-  }
-
-  #error_explanation {
-    width: 450px;
-    border: 2px solid red;
-    padding: 7px;
-    padding-bottom: 0;
-    margin-bottom: 20px;
-    background-color: #f0f0f0;
-
-    h2 {
-      text-align: left;
-      font-weight: bold;
-      padding: 5px 5px 5px 15px;
-      font-size: 12px;
-      margin: -7px;
-      margin-bottom: 0px;
-      background-color: #c00;
-      color: #fff;
-    }
-
-    ul li {
-      font-size: 12px;
-      list-style: square;
-    }
-  }
-
-  /*sidenav https://www.w3schools.com/howto/howto_js_sidenav.asp*/
-
-  .sidenav {
-    position:fixed;
-    height:100%;
-    width:220px;
-    top:0;
-    left:0;
-    padding-top: 50px;
-  }
-
-  .main {
-    margin-left: 100px;
+.main {
+  margin-left: 100px;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
 
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 .openNav {
@@ -268,23 +253,22 @@ label {
 
 /*footer*/
 
- .social-media {
+.social-media {
   width: 20%;
   float:left;
   display: block;
   bottom: 0;
-
 }
 
 .footer{
-    bottom: 0;
-    background-color: #1F6BEF;
-    position: fixed;
-    z-index: 3;
-    width: 100%
+  bottom: 0;
+  background-color: #1F6BEF;
+  position: fixed;
+  z-index: 3;
+  width: 100%
 }
 
-  .contact {
+.contact {
   width: 20%;
   float: right;
   bottom: 0;
