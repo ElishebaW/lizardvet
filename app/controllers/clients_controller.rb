@@ -58,6 +58,6 @@ private
   end
 
   def client_params
-    params.require(:client).permit(:petname, :weight, :length, :last_seen)
+    params.require(:client).permit(:first_name, :last_name, :phone_number, :address, :lizards_id)
   end
 end
