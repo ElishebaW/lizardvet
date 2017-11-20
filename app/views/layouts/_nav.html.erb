@@ -1,8 +1,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <% if user_signed_in? %>
-      <%= link_to "Logout", destroy_user_session_path ,:method => :delete %>
-      <%= link_to "Manage Vets", veterinarians_path%>
-      <%= link_to "Case Load", lizards_path %>
+      <h1 class='portal_title'>The Veterinarians Internal Portal </h1>
     <% else %>
       <%= link_to "Login",  user_session_path %>
       <%= link_to "Home", home_index_path%>
