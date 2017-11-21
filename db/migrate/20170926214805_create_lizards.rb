@@ -1,4 +1,4 @@
-class CreateLizards < ActiveRecord::Migration
+class CreateLizards < ActiveRecord::Migration[4.2]
   def change
     create_table :lizards do |t|
       t.string :petname
