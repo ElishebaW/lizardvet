@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :clients
 
 
-  root  'lizards#index'
+  root  'home#index'
 
 
 

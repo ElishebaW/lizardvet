@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 ruby '2.4.1'
 
-gem 'rails', '4.2.8'
+gem 'rails', '~> 5.1', '>= 5.1.4'
+gem 'railties', '~> 5.1', '>= 5.1.4'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
@@ -19,6 +19,7 @@ gem 'nokogiri', '~> 1.8', '>= 1.8.1'
 gem "chartkick"
 gem 'groupdate'
 gem 'puma', '~> 3.10'
+
 
 group :production do
   gem 'pg'
