@@ -1,19 +1,19 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: fincollegeapp_development
+  database: theveterinarians_development
   pool: 5
   username: root
   password: password
 
 test:
   adapter: postgresql
-  database: fincollegeapp_test
+  database: theveterinarians_test
   pool: 5
   timeout: 5000
 
 production:
   adapter: postgresql
-  database: fincollegeapp_production
+  database: theveterinarians_production
   pool: 5
   timeout: 5000
