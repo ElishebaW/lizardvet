@@ -4,35 +4,41 @@
   position: fixed;
   top: 0;
   background-color: #1F6BEF;
-  padding: 20px;
+  padding: 5px;
   width: 100%;
   z-index:1;
+
+  ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 14px;
+    bottom: 0;
+  }
+
+  a {
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 20px;
+    text-decoration: none;
+    color: #333538;
+    font: bold 20px  Helvetica, sans-serif;
+  }
+
+  a:visited {
+    color: #333538;
+  }
+
+  a:hover {
+    background-color: #b4b4b4;
+  }
 }
 
-ul {
-  list-style-type: none;
-  text-align: center;
-  font-size: 14px;
-  bottom: 0;
+.portal_title {
+  font-family: 'Yeseva One';
+  font-weight: bold;
+  font-size: 36px;
+  padding:0;
 }
-
-a {
-  padding: 0px;
-  box-sizing: border-box;
-  margin: 20px;
-  text-decoration: none;
-  color: #333538;
-  font: bold 20px  Helvetica, sans-serif;
-}
-
-a:visited {
-  color: #333538;
-}
-
-a:hover {
-  background-color: #b4b4b4;
-}
-
 /* Headers */
 
 h1, h2{
@@ -186,7 +192,7 @@ pre {
   background-color: #f0f0f0;
 
   h2 {
-  lor: #fff;
+  color: #fff;
   }
 
   ul li {
@@ -201,9 +207,7 @@ pre {
   position:fixed;
   height:100%;
   width:220px;
-  top:0;
   left:0;
-  padding-top: 50px;
 }
 
 .main {
