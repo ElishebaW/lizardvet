@@ -5,9 +5,6 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
 
-RSpec.configure do |config|
-  config.include Devise::Test::ControllerHelpers, type: :controller
-end
 
 ActiveRecord::Migration.maintain_test_schema!
 
