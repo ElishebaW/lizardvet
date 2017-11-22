@@ -16,7 +16,7 @@ gem 'devise', '~> 4.3'
 gem 'bcrypt', '~> 3.1.7'
 gem 'unicorn'
 gem 'nokogiri', '~> 1.8', '>= 1.8.1'
-gem "chartkick"
+gem 'chartkick', '~> 2.2', '>= 2.2.5'
 gem 'groupdate'
 gem 'puma', '~> 3.10'
 

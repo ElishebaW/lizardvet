@@ -261,7 +261,7 @@ DEPENDENCIES
   capybara (~> 2.13)
   carrierwave (~> 1.0)
   carrierwave-processing (~> 1.1)
-  chartkick
+  chartkick (~> 2.2, >= 2.2.5)
   chromedriver-helper
   database_cleaner
   devise (~> 4.3)
