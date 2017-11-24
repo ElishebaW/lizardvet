@@ -1,9 +1,11 @@
+
 <div class='main'>
 <h1>Case Load</h1>
 <%= render 'lizards/sidebar' %>
 <table>
   <thead>
     <tr>
+      <th><strong>ID</strong></th>
       <th><strong>Pet Name</strong></th>
       <th>Weight</th>
       <th>Length</th>
@@ -18,7 +20,8 @@
   <tbody>
     <% @lizards.each do |lizard| %>
     <tr>
-      <td><strong><%= lizard.petname %></strong></td>
+      <td><%= lizard.id %></td>
+      <td><%= lizard.petname %></td>
       <td><%= lizard.weight %></td>
       <td><%= lizard.length %></td>
       <td><%= lizard.social_score %></td>
