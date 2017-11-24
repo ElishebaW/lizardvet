@@ -6,18 +6,15 @@
   <%= area_chart @lizards.group_by_month(:last_seen).count %>
   </div>
 
-
   <h2>Avg Social Score</h2>
   <div class='chart'>
   <%= line_chart Lizard.group(:social_score).count %>
   </div>
 
-
   <h2>Avg Diet Score</h2>
   <div class='chart'>
   <%= bar_chart @lizards.group(:diet_score).count %>
   </div>
-
 
   <h2>Avg Fitness Score</h2>
   <div class='chart'>
