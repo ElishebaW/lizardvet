@@ -133,14 +133,6 @@ th {
   overflow-y: auto;
 }
 
-/* line 129, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
-.main {
-  padding: 15px 25px;
-  margin: 10px 10px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
 /* line 136, /Users/elishebawiggins/lizardvet/app/assets/stylesheets/main.scss */
 input[type=email], input[type=password], input[type=text] {
   width: 30%;
@@ -322,4 +314,3 @@ pre {
 
 
  */
-
