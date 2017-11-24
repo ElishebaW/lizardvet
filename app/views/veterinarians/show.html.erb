@@ -1,24 +1,17 @@
-<p id="notice"><%= notice %></p>
+<div class='main'>
+  <p id="notice"><%= notice %>
+    <strong>First Name:</strong>
+    <%= @veterinarian.first_name %>
 
-<div class="main">
-  <strong>First name:</strong>
-  <%= @veterinarian.first_name %>
+    <strong>Last Name:</strong>
+    <%= @veterinarian.last_name %>
+
+    <strong>Years in Practice:</strong>
+    <%=  @veterinarian.years_in_practice %>
+
+    <strong>Vet University:</strong>
+    <%= @veterinarian.vet_university %>
+
+  <%= link_to 'Edit', edit_client_path(@veterinarian) %> |
+  <%= link_to 'Back', clients_path %>
 </div>
-
-<div class="main">
-  <strong>Last name:</strong>
-  <%= @veterinarian.last_name %>
-</div>
-
-<div class="main">
-  <strong>Years in practice:</strong>
-  <%= @veterinarian.years_in_practice %>
-</div>
-
-<div class="main">
-  <strong>Vet university:</strong>
-  <%= @veterinarian.vet_university %>
-</div>
-
-<%= link_to 'Edit', edit_veterinarian_path(@veterinarian) %> |
-<%= link_to 'Back', veterinarians_path %>
