@@ -6,23 +6,23 @@ RSpec.feature 'sidebar navigation', :type => :feature do
     visit '/'
   end
 
-  it 'clicks the case load link on the side bar' do
+  it 'clicks the Case Loadlink on the side bar' do
     click_link('Case Load')
     expect(page).to have_content('Case Load')
   end
 
-  it 'clicks the case load link on the side bar' do
+  it 'clicks the Analytics link on the side bar' do
     click_link('Analytics')
     expect(page).to have_content('Practice Performance Analytics')
   end
 
-  it 'clicks the clients link on the side bar' do
+  it 'clicks the Clients link on the side bar' do
     click_link('Clients')
     expect(page).to have_content('Pet Owners')
   end
 
-  it 'clicks the clients link on the side bar' 
-    click_link('Clients')
-    expect(page).to have_content('Pet Owners')
+  it 'clicks the Manage Vets link on the side bar' do
+    click_link('Manage Vets')
+    expect(page).to have_content('Practice Veterinarians')
   end
 end
