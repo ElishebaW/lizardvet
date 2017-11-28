@@ -1,12 +1,8 @@
 <div class='row'>
-    <%= render 'lizards/sidebar' %>
-<div class='main'>
-
-
+  <%= render 'lizards/sidebar' %>
   <div class='col-9'>
-
+  <p id="notice"><%= notice %></p>
   <h1>Case Load</h1>
-
   <table>
     <thead>
       <tr>
@@ -40,7 +36,6 @@
     </tbody>
   </table>
   <br>
-    <%= link_to 'New Pet', new_lizard_path %>
-    </div>
+  <%= link_to 'New Pet', new_lizard_path %>
   </div>
 </div>

@@ -1,29 +1,32 @@
-<div class='main'>
-<h1>Pet Owners</h1>
-<%= render 'lizards/sidebar' %>
-<table>
-  <thead>
-    <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Phone Number</th>
-      <th>Address</th>
-      <th>Pet Name</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @clients.each do |client| %>
-    <tr>
-      <td><%= client.first_name %></td>
-      <td><%= client.last_name %></td>
-      <td><%= client.phone_number %></td>
-      <td><%= client.address %></td>
-      <td><%= client.lizards_id%></td>
-      <td><%= link_to 'Edit', edit_client_path(client) %></td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
-<%= link_to 'New client', new_client_path %> | <%= link_to 'Back', lizards_path %>
+<div class='row'>
+  <%= render 'lizards/sidebar' %>
+    <div class='col-9'>
+      <p id="notice"><%= notice %></p>
+    <h1>Pet Owners</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Phone Number</th>
+          <th>Address</th>
+          <th>Pet Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @clients.each do |client| %>
+        <tr>
+          <td><%= client.first_name %></td>
+          <td><%= client.last_name %></td>
+          <td><%= client.phone_number %></td>
+          <td><%= client.address %></td>
+          <td><%= client.lizards_id%></td>
+          <td><%= link_to 'Edit', edit_client_path(client) %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+    <br>
+    <%= link_to 'New client', new_client_path %> | <%= link_to 'Back', lizards_path %>
+  </div>
 </div>
