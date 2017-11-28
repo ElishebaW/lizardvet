@@ -1,39 +1,46 @@
-
+<div class='row'>
+    <%= render 'lizards/sidebar' %>
 <div class='main'>
-<h1>Case Load</h1>
-<%= render 'lizards/sidebar' %>
-<table>
-  <thead>
-    <tr>
-      <th><strong>ID</strong></th>
-      <th><strong>Pet Name</strong></th>
-      <th>Weight</th>
-      <th>Length</th>
-      <th>Social Score</th>
-      <th>Diet Score</th>
-      <th>Fitness Score</th>
-      <th>Mental Score</th>
-      <th>Last seen</th>
-      <th>Manage</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @lizards.each do |lizard| %>
-    <tr>
-      <td><%= lizard.id %></td>
-      <td><%= lizard.petname %></td>
-      <td><%= lizard.weight %></td>
-      <td><%= lizard.length %></td>
-      <td><%= lizard.social_score %></td>
-      <td><%= lizard.diet_score %></td>
-      <td><%= lizard.fitness_score %></td>
-      <td><%= lizard.mental_score %></td>
-      <td><%= lizard.last_seen.strftime("%m/%d/%Y") %></td>
-      <td><%= link_to 'Edit', edit_lizard_path(lizard) %></td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
-  <%= link_to 'New Pet', new_lizard_path %>
+
+
+  <div class='col-9'>
+
+  <h1>Case Load</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th><strong>ID</strong></th>
+        <th><strong>Pet Name</strong></th>
+        <th>Weight</th>
+        <th>Length</th>
+        <th>Social Score</th>
+        <th>Diet Score</th>
+        <th>Fitness Score</th>
+        <th>Mental Score</th>
+        <th>Last seen</th>
+        <th>Manage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @lizards.each do |lizard| %>
+      <tr>
+        <td><%= lizard.id %></td>
+        <td><%= lizard.petname %></td>
+        <td><%= lizard.weight %></td>
+        <td><%= lizard.length %></td>
+        <td><%= lizard.social_score %></td>
+        <td><%= lizard.diet_score %></td>
+        <td><%= lizard.fitness_score %></td>
+        <td><%= lizard.mental_score %></td>
+        <td><%= lizard.last_seen.strftime("%m/%d/%Y") %></td>
+        <td><%= link_to 'Edit', edit_lizard_path(lizard) %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+    <%= link_to 'New Pet', new_lizard_path %>
+    </div>
+  </div>
 </div>

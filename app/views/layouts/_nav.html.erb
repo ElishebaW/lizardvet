@@ -1,7 +1,8 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <% if 1==1 %>
-      <h1 class='portal_title'>The Veterinarians Internal Portal </h1>
-    <% else %>
-      <%= link_to "Login",  user_session_path %>
-      <%= link_to "Home", home_index_path%>
-    <% end %>
+<div class='header'>
+<% if 1==1 %>
+  <h1>The Veterinarians Internal Portal </h1>
+<% else %>
+  <%= link_to "Login",  user_session_path %>
+  <%= link_to "Home", home_index_path%>
+<% end %>
+</div>
